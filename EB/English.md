@@ -23,6 +23,6 @@
 - : : colon
 - ; : semcolon
 - ( ) : parentheses, curved brackets
-- [ ] : brackets, square brackets
+- \[ \] : brackets, square brackets
 - \- : hyphen, dash
 - _ : underscore
