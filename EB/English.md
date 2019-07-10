@@ -1,6 +1,6 @@
 # English Bear
 
-## Prepositions of places
+## Prepositions of place
 
 - IN : large places, enclosed plasces
 - ON : surface
