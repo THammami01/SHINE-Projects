@@ -233,4 +233,13 @@ sayHello("World")
 
 ## Modules: requests, bs4
 
-pip install requests, bs4, lxml
+pip install requests, bs4
+pip install lxml, html5lib
+
+```python
+html_doc = """<!-- html code here -->"""
+soup = BeautifulSoup(html_doc, "lxml")  # can use "lxml" or "html5lib"
+
+with open("text.html", "w") as f:
+    f.write(soup.prettify())
+```
