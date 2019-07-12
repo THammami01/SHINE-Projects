@@ -26,3 +26,13 @@
 - \[] : brackets, square brackets
 - \- : hyphen, dash
 - _ : underscore
+
+## Articles
+
+- Countable nouns
+  - Indefinite : a/an + singular noun
+  - Definite : \[nothing]/the + plural noun
+
+- Uncountable nouns
+  - Indefinite : \[nothing] + noun
+  - Definite :   \[nothing]/the + noun

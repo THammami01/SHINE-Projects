@@ -243,3 +243,13 @@ soup = BeautifulSoup(html_doc, "lxml")  # can use "lxml" or "html5lib"
 with open("text.html", "w") as f:
     f.write(soup.prettify())
 ```
+
+## Python Anywhere
+
+- Install/Uninstall packages : pip3.5 [un]install requests
+- Check if a package is intalled : pip3.6 show requests
+- Show installed packages : pip3.6 freeze
+
+```python
+
+```

@@ -1,7 +1,7 @@
 import requests
 import json
 import re
-from random import randint
+from random import randint, choice
 from time import sleep, strftime  # ctime, gmtime, localtime
 
 chats = [
@@ -41,9 +41,11 @@ class BearBot:
             if (strftime("%c") == given_date):
                 for i in range(nbr_times):
 
-                    heart = "❤️"
                     msg = ""
                     for i in range(randint(1, max_nbr_hearts)):
+                        heart = choice(
+                            ["❤️", "❤️", "🧡", "💛", "💚", "💙", "💜", "🖤"]
+                        )
                         msg += heart
 
                     r = requests.get(
@@ -88,9 +90,8 @@ class BearBot:
         file.close()
 
 
-chat_id = chats[1]["chat_id"]
-msg = "Hello !"
+chat_id = chats[0]["chat_id"]
+msg = "❤️❤️ Have nice dreams ❤️❤️"
+BearBot.sendMsg(chat_id, msg)
 
-BearBot.sendHearts(chat_id, nbr_times=30, delay=2)
-# BearBot.sendMsg(
-    # chat_id, msg="I can respond yett.. I am sorry . Later . 😹😹❤️❤️❤️❤️️")
+# BearBot.sendHearts(chat_id, max_nbr_hearts=8, nbr_times=10, delay=1)
